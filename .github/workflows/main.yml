@@ -1,5 +1,7 @@
 name: Release CI
-on: push
+on: 
+  workflow_dispatch:
+  push:
 jobs:
   x64_build:
     runs-on: windows-latest
